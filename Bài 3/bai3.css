@@ -109,7 +109,7 @@ a#blue-box {
 
 .grid-info {
     padding: 20px;
-    max-width: fit-content;
+    width: 400px;
 }
 
 .info-flex {
@@ -127,11 +127,13 @@ a#blue-box {
 }
 
 .hobby {
-    display: grid;
-    grid-template-columns: auto auto;
-    /* margin-top: 2px; */
-    width: 62px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 180px;
     margin: 1px;
+    flex-direction: row;
+    align-content: center;
+    align-items: baseline;
 }
 
 .hobby > p {
