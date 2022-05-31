@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gray: #BFC8E6;
+    --black: #151B32;
+    --blue: #849FFF;
+    --info-radius: 16px; 
+    --hobby-radius: 10px;
+    --name-size: 18px;
+    --address: 14px;
+    --hobby: 12px;
+}
+
+html{
+    background-color: var(--gray);   
+}
+
+#user, h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+#search-container, #nav-menu, p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+#container {
+    margin: 100px;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: var(--info-radius);
+    position: absolute;
+    width: 1213px;
+    height: 100vh;
+    left: auto;
+    top: auto;
+}
+
+#user {
+    font-size: 32px;
+    font-weight: bold;
+}   
+
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 5vh 0;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+    border: none;
+
+}
+
+form#search-container input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    background: #f1f1f1;
+    max-height: 41.5px;
+}
+
+button.search {
+    float: left;
+    width: 20%;
+    padding: 10px; 
+    font-size: 17px;
+    cursor: pointer;
+    max-height: 41.5px;
+}
+
+#nav-menu > a {
+    display: inline-block;
+    line-height: 24px;
+    padding: 10px;
+    margin: 10px;
+}
+
+a#blue-box {
+    color: #fff;
+    background-color: var(--blue);
+    border-radius: 8px;
+}
+
+.grid-container {
+    display: grid;
+    align-content: space-between;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: auto auto auto;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 10vh;
+}
+
+.grid-info {
+    padding: 20px;
+    max-width: fit-content;
+}
+
+.info-flex {
+    display: flex;
+
+}
+
+.info {
+    margin-left: 40px;
+}
+
+.special {
+    border-radius: var(--info-radius);
+    border: 1px solid var(--gray);
+}
+
+.hobby {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* margin-top: 2px; */
+    width: 62px;
+    margin: 1px;
+}
+
+.hobby > p {
+    border: 1px solid var(--gray);
+    border-radius: var(--hobby-radius);
+    color: var(--blue);
+    line-height: 18px;
+    padding: 2px 8px;
+
+}
+
+
+
