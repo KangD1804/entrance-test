@@ -98,24 +98,19 @@ a#blue-box {
 }
 
 .grid-container {
-    display: grid;
+    display: inline-grid;
     align-content: space-between;
     align-items: center;
     justify-items: center;
-    grid-template-columns: auto auto auto;
-    background-color: #fff;
+    grid-template-columns: repeat(3, 1fr);
     padding: 10px;
     margin-top: 10vh;
+    grid-gap: 1px;
 }
-
-/* .flex-container {
-    display: flex;
-    
-} */
-
 .grid-info {
     padding: 20px;
     width: 400px;
+    /* box-sizing: content-box; */
 }
 
 .info-flex {
@@ -148,7 +143,6 @@ a#blue-box {
     color: var(--blue);
     line-height: 18px;
     padding: 2px 8px;
-
 }
 
 
